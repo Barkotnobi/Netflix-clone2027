@@ -1,22 +1,26 @@
 import React from 'react'
 import "./header.css";
-import NetflixLogo from "../../assets/image/NetflixLogo.svg"
+import Logo from "../../assets/image/logo.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-//import NetflixLogo from "../../assets/image/NetflixLogo.svg"
+
+
+
 const Header = () => {
   return (
     <div className="header-outer-container">
       <div className="header-container">
         <div className="header-left">
           <ul>
+          {
             <li>
-              <img src="{NetflixLogo}" alt="Netflix Logo"width="100"/>
+              <img src={Logo} alt="Netflix Logo"width="100"/>
             </li>
+            }
             <li>Home</li>
-            <li>Tvshows</li>
+            <li>TVShows</li>
             <li>Movies</li>
             <li>Latest</li>
             <li>MyList</li>
